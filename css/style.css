@@ -98,6 +98,7 @@
     background: url("../img/dateBack.png") no-repeat;
     background-size: contain;
 }
+/*For Mozila Timer*/
 @-moz-document url-prefix()
 {
      .timer-item__numbers {
@@ -105,14 +106,22 @@
          padding-right: 11px;
          padding-top: 6px;
      }
+    .timer-item__text {
+        padding-right: 22px!important;
+        padding-top: 0;
+    }
     @media (max-width: 572px) {
         .timer-item__numbers {
          padding-left: 23px!important;
+        }
+        .timer-item__text {
+            padding: 0!important;
         }
     }
 }
 .timer-item__text {
     padding-right: 12px;
+    padding-top: 5px;
 }
 /*Bottom*/
 .special-offer-content-bottom {
@@ -172,7 +181,7 @@
 .linkText_banner {
     position: absolute;
     bottom: 22px;
-    right: 34px;
+    right: 25px;
 }
 /*Start Adaptive*/
 @media (max-width: 1389px) {
