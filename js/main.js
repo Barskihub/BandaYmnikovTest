@@ -46,4 +46,4 @@ function timerLeft(year,month,day) {
 }
 
 //Запускаем нашу функцию
-timerLeft(2019, 4, 16);
+timerLeft(2019, 4, 17);
