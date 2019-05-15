@@ -98,6 +98,19 @@
     background: url("../img/dateBack.png") no-repeat;
     background-size: contain;
 }
+@-moz-document url-prefix()
+{
+     .timer-item__numbers {
+         background-size: auto;
+         padding-right: 11px;
+         padding-top: 6px;
+     }
+    @media (max-width: 572px) {
+        .timer-item__numbers {
+         padding-left: 23px!important;
+        }
+    }
+}
 .timer-item__text {
     padding-right: 12px;
 }
