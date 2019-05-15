@@ -97,7 +97,6 @@
     letter-spacing: 8px;
     background: url("../img/dateBack.png") no-repeat;
     padding-right: 14px;
-    padding-top: 5px;
 }
 .timer-item__text {
     padding-right: 25px;
@@ -201,7 +200,6 @@
         padding-right: 0;
         background: url("../img/dateBack.png") no-repeat center;
         padding-left: 10px;
-        padding-top: 11px;
     }
     .special-content__costs {
         padding-bottom: 10px;
