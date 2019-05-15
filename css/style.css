@@ -194,6 +194,9 @@
     .container-sales__special-offer-2 {
         width: auto;
     }
+    .special-offer-img-items, .special-offer-content {
+        padding-left: 4px;
+    }
     .timer-item__numbers {
         padding-right: 0;
         background: url("../img/dateBack.png") no-repeat center;
