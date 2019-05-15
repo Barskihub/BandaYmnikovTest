@@ -97,6 +97,7 @@
     letter-spacing: 11px;
     background: url("../img/dateBack.png") no-repeat -2px;
     padding-right: 17px;
+    padding-top: 5px;
 }
 .timer-item__text {
     padding-right: 17px;
@@ -152,7 +153,7 @@
     padding: 10px 15px;
 }
 .container-sales__special-offer-2 {
-    background: url("../img/banner.png") no-repeat;
+    /*background: url("../img/banner.png") no-repeat;*/
     width: 564px;
     height: 294px;
     position: relative;
@@ -165,8 +166,7 @@
 /*Start Adaptive*/
 @media (max-width: 1389px) {
     .container-sales {
-        margin: 0;
-        text-align: center;
+
     }
     .container-sales__special-offers {
         justify-content: center;
@@ -175,6 +175,70 @@
 @media (max-width: 1185px) {
     .container-sales__special-offers {
         grid-template-columns: repeat(1, 566px);
+    }
+    .container-sales {
+        text-align: center;
+    }
+    .costsNoOffer::after {
+        left: 47px;
+    }
+}
+@media (max-width: 572px) {
+    .container-sales {
+        margin: 0;
+    }
+    .container-sales__special-offer-1 {
+        width: auto;
+        height: auto;
+        display: grid;
+    }
+    .container-sales__special-offer-2 {
+        width: auto;
+    }
+    .timer-item__numbers {
+        background: url("../img/dateBack.png") no-repeat 34%;
+        padding-right: 9%;
+    }
+    .special-content__costs {
+        padding-bottom: 10px;
+    }
+    .costsNoOffer::after {
+        left: 100px;
+    }
+    .container-sales__special-offer-2 {
+        display: none;
+    }
+    .container-sales__special-offers {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .special-offer-img_curve {
+        left: 27%;
+    }
+    .costsNoOffer::after {
+        left: 37%;
+    }
+}
+@media (max-width: 500px) {
+    .item__numbers {
+        padding-right: 3%;
+        background: url("../img/dateBack.png") no-repeat 40%;
+    }
+    .special-offer-img_curve {
+        left: 20%;
+    }
+    .timer-item__numbers {
+        padding-right: 7%;
+    }
+    .special-offer-content {
+        padding-left: 0;
+    }
+    .costsNoOffer::after {
+        left: 30%;
+    }
+}
+@media (max-width: 420px) {
+    .timer-item__numbers {
+        padding-right: 0;
     }
 }
 
