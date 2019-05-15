@@ -1,0 +1,180 @@
+
+/*global sittings*/
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-width {
+    max-width: 1400px;
+    margin: auto;
+}
+@font-face {
+    font-family: 'Proxima Nova Regular';
+    src: url('../fonts/ProximaNova/ProximaNova-regular.ttf');
+    src: url('../fonts/ProximaNova/ProximaNova-regular.eot?iefix') format('eot'),
+    url('../fonts/ProximaNova/ProximaNova-regular.woff') format('woff'),
+    url('../fonts/ProximaNova/ProximaNova-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova ExCn Bl';
+    src: url('../fonts/ProximaNova/ProximaNovaExCn-black.ttf');
+    src: url('../fonts/ProximaNova/ProximaNovaExCn-black.eot?iefix') format('eot'),
+    url('../fonts/ProximaNova/ProximaNovaExCn-black.woff') format('woff'),
+    url('../fonts/ProximaNova/ProximaNovaExCn-black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.container-sales {
+    margin-left: 113px;
+    margin-right: 112px;
+}
+/*Header*/
+.container-sales__header {
+    font-family: Proxima Nova Regular,Helvetica Neue,Arial,sans-serif;
+    color: #000000;
+    font-size: 40px;
+    padding-top: 24px;
+    font-weight: 400;
+}
+/*sections*/
+.container-sales__special-offers {
+    padding-top: 19px;
+    display: grid;
+    grid-template-columns: repeat(2, 566px);
+    grid-gap: 40px;
+}
+.container-sales__special-offer-1 {
+    background: url("../img/special-offer-background.png");
+    width: 566px;
+    height: 294px;
+    display: flex;
+}
+.special-offer-img-items {
+    padding-top: 12px;
+    padding-left: 15px;
+    position: relative;
+}
+.special-offer-img_curve {
+    position: absolute;
+    left: 146px;
+    top: 3px;
+}
+.special-offer-content {
+    padding-left: 42px;
+    padding-top: 14px;
+}
+.special-offer-content-name {
+    color: #000000;
+    font-family: Proxima Nova Regular,Helvetica Neue,Arial,sans-serif;
+    font-size: 31px;
+    margin-bottom: 4px;
+}
+.special-offer-content-text {
+    color: #000000;
+    font-family: Proxima Nova Regular,Helvetica Neue,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+/*Timer*/
+.special-offer-content-timer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 8px;
+}
+.timer-item {
+    display: grid;
+    text-align: center;
+}
+.timer-item__numbers {
+    color: #000000;
+    font-family: Umnik;
+    font-size: 55px;
+    font-weight: 700;
+    letter-spacing: 11px;
+    background: url("../img/dateBack.png") no-repeat -2px;
+    padding-right: 17px;
+}
+.timer-item__text {
+    padding-right: 17px;
+}
+/*Bottom*/
+.special-offer-content-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.special-content__costs {
+    display: grid;
+    padding-top: 11px;
+}
+.costsOffer {
+    color: #ff0072;
+    font-family: Proxima Nova Regular,Helvetica Neue,Arial,sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    height: 42px;
+}
+.costsNoOffer {
+    color: #000000;
+    font-family: Proxima Nova Regular,Helvetica Neue,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+}
+.costsNoOffer:after {
+    content: "";
+    background: url(../img/OfferLine.png) no-repeat;
+    width: 62px;
+    height: 100%;
+    position: absolute;
+    left: -5px;
+    top: 5px;
+}
+.special-content__linkButton {
+    margin: auto auto auto 0;
+}
+.linkText {
+    width: 142px;
+    height: 43px;
+    box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.44);
+    background-color: #ff0072;
+    text-align: center;
+    color: #ffffff;
+    font-family: Proxima Nova Regular,Helvetica Neue,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.container-sales__special-offer-2 {
+    background: url("../img/banner.png") no-repeat;
+    width: 564px;
+    height: 294px;
+    position: relative;
+}
+.linkText_banner {
+    position: absolute;
+    bottom: 22px;
+    right: 34px;
+}
+/*Start Adaptive*/
+@media (max-width: 1389px) {
+    .container-sales {
+        margin: 0;
+        text-align: center;
+    }
+    .container-sales__special-offers {
+        justify-content: center;
+    }
+}
+@media (max-width: 1185px) {
+    .container-sales__special-offers {
+        grid-template-columns: repeat(1, 566px);
+    }
+}
+
