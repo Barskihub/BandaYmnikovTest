@@ -241,4 +241,8 @@
         padding-right: 0;
     }
 }
-
+@media (max-width: 350px) {
+    .timer-item__numbers {
+        padding-left: 4px;
+    }
+}
