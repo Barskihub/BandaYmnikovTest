@@ -94,13 +94,13 @@
     font-family: Umnik;
     font-size: 55px;
     font-weight: 700;
-    letter-spacing: 11px;
-    background: url("../img/dateBack.png") no-repeat -2px;
-    padding-right: 17px;
+    letter-spacing: 8px;
+    background: url("../img/dateBack.png") no-repeat;
+    padding-right: 14px;
     padding-top: 5px;
 }
 .timer-item__text {
-    padding-right: 17px;
+    padding-right: 25px;
 }
 /*Bottom*/
 .special-offer-content-bottom {
@@ -153,7 +153,6 @@
     padding: 10px 15px;
 }
 .container-sales__special-offer-2 {
-    /*background: url("../img/banner.png") no-repeat;*/
     width: 564px;
     height: 294px;
     position: relative;
@@ -196,8 +195,10 @@
         width: auto;
     }
     .timer-item__numbers {
-        background: url("../img/dateBack.png") no-repeat 34%;
-        padding-right: 9%;
+        padding-right: 0;
+        background: url("../img/dateBack.png") no-repeat center;
+        padding-left: 10px;
+        padding-top: 11px;
     }
     .special-content__costs {
         padding-bottom: 10px;
@@ -217,17 +218,13 @@
     .costsNoOffer::after {
         left: 37%;
     }
+    .timer-item__text {
+        padding-right: 0;
+    }
 }
 @media (max-width: 500px) {
-    .item__numbers {
-        padding-right: 3%;
-        background: url("../img/dateBack.png") no-repeat 40%;
-    }
     .special-offer-img_curve {
         left: 20%;
-    }
-    .timer-item__numbers {
-        padding-right: 7%;
     }
     .special-offer-content {
         padding-left: 0;
@@ -236,13 +233,4 @@
         left: 30%;
     }
 }
-@media (max-width: 420px) {
-    .timer-item__numbers {
-        padding-right: 0;
-    }
-}
-@media (max-width: 350px) {
-    .timer-item__numbers {
-        padding-left: 4px;
-    }
-}
+
