@@ -96,10 +96,10 @@
     font-weight: 700;
     letter-spacing: 10px;
     background: url("../img/dateBack.png") no-repeat;
-    padding-right: 14px;
+    background-size: contain;
 }
 .timer-item__text {
-    padding-right: 25px;
+    padding-right: 12px;
 }
 /*Bottom*/
 .special-offer-content-bottom {
@@ -197,7 +197,6 @@
         padding-left: 4px;
     }
     .timer-item__numbers {
-        padding-right: 0;
         background: url("../img/dateBack.png") no-repeat center;
         padding-left: 10px;
     }
